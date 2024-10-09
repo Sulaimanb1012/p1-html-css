@@ -1,96 +1,138 @@
-/* General body styling */
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-/* Header and navigation */
-header {
-    background-color: #00a1c9;
-    padding: 10px 0;
+body {
+    font-family: Arial, sans-serif;
 }
 
 nav {
+    background-color: #008CBA;
+    padding: 1rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav img.logo {
-    margin-left: 20px;
+nav .logo-img {
     height: 50px;
 }
 
-nav ul {
+.nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
 }
 
-nav ul li a {
-    color: white;
+.nav-links a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-nav ul li a.active, 
-nav ul li a:hover {
-    color: #ffa500;
-}
-
-/* Main content section */
-main {
-    display: flex;
-    justify-content: center;
-    padding: 50px 20px;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-}
-
-.html-css-logo {
-    width: 200px;
-    height: auto;
-}
-
-.text-content {
-    margin-left: 30px;
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-}
-
-.text-content p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.text-content .highlight {
-    color: #ffa500;
-}
-
-/* Footer styling */
-footer {
-    background-color: #00a1c9;
+#hero {
+    background-image: url('Schermafbeelding\ 2024-10-02\ 185101.png');
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
+    padding: 400px 100px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#html-css {
+background-image: url(Schermafbeelding\ 2024-10-02\ 203429.png); 
+background-size: cover;
+color: white;
+text-align: center;
+padding: 400px 100px;
+}
+
+#javascript {
+background-image: url(Schermafbeelding\ 2024-10-02\ 194426.png);
+background-size: cover;
+color: white;
+text-align: center;
+padding: 400px 100px;
+}
+
+#php {
+background-image: url(Schermafbeelding\ 2024-10-06\ 001531.png); 
+background-size: cover;
+color: white;
+text-align: center;
+padding: 400px 100px;
+}
+
+#sql {
+background-image: url(Schermafbeelding\ 2024-10-02\ 204849.png);
+background-size: cover;
+color: white;
+text-align: center;
+padding: 400px 100px;
+}
+
+#TCR {
+background-image: url(Schermafbeelding\ 2024-10-09\ 182749.png);
+background-size: cover;
+color: white;
+text-align: center;
+padding: 50px 50px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005f73;
+}
+
+footer {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
-
-
