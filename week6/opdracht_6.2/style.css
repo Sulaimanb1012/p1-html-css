@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    gap: 10px; 
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+
+.container .green {
+    order: 1;
+}
+
+.container .red {
+    order: 2;
+}
+
+.container .black {
+    order: 3;
+}
+
+.container .blue {
+    order: 4;
+}
