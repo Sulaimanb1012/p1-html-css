@@ -5,9 +5,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Goldman", cursive;
+    background-image: url(img/background.jpeg);
+    background-size: 100vw;
+    b
 }
 
+
+h2 {
+color: white;    
+}
 nav {
     background-color: #008CBA;
     padding: 1rem;
@@ -37,66 +44,164 @@ nav .logo-img {
     font-size: 1.2rem;
 }
 
-#hero {
-    background-image: url('Schermafbeelding\ 2024-10-02\ 185101.png');
-    background-size: cover;
+
+h1  {
+color: rgb(255, 255, 255);
+text-align: center;
+top: 50%;
+position: absolute;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 50px;
+}
+
+
+h2 {
+color: black;
+color: white;
+}
+
+
+
+
+    .javascriptTxt{
+        top: 20vh;
+        /* align-content: center; */
+    }
+
+
+    
+    .html-cssTxt{
+        top: 20vh;
+        /* align-content: center; */
+    }
+
+
+/* .javaImage{
+    float: right;
+    width: 20%;
+    margin: 20%;
+} */
+
+
+
+.javascriptContainer{
+    /* position: absolute; */
+    margin-top: 20vh;
+    margin-left: 5vw;
+
+}
+
+.html-cssContainer{
+    /* position: absolute; */
+    margin-top: 20vh;
+    margin-left: 10vw;
+
+}
+
+.javascriptHighlight{
+    color:yellow;
+}
+
+.html-cssHighlight{
+    color: lightskyblue;
+    
+   
+}
+
+.html-cssHighlight{
+    color: lightblue;
+    color: orangered;
+    
+   
+}
+
+
+
+
+
+.javaImage{
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    right: 5%;
+  
+}
+
+.sqlImage{
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    right: 5%;
+  
+}
+
+.html-cssImage{
+    position: absolute;
+    width: 35%;
+    top: 25%;
+    left: 5%;
+  
+}
+
+
+
+ 
+.phpTxt {
     color: white;
+    background-color: white;
     text-align: center;
-    padding: 400px 100px;
+    top: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    }
+
+
+    .html-cssTxt {
+        color: rgb(6, 5, 5);
+        background-color: white;
+        text-align: center;
+        top: 20%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        }
+    
+
+
+  
+
+.php{
+background-image: none;
+background-color: white;
+
+        }    
+
+
+.javascript p {
+    width: 40%;
+    height: 20%;
+    color:white;
+
 }
 
-#hero h1 {
-    font-size: 3rem;
+.sql p {
+    width: 40%;
+    height: 20%;
+    color:white;
 }
 
-#html-css {
-background-image: url(Schermafbeelding\ 2024-10-02\ 203429.png); 
-background-size: cover;
-color: white;
-text-align: center;
-padding: 400px 100px;
+.html-css p {
+  width: 40%;
+ height: 60%;
+  color:black;
+
 }
 
-#javascript {
-background-image: url(Schermafbeelding\ 2024-10-02\ 194426.png);
-background-size: cover;
-color: white;
-text-align: center;
-padding: 400px 100px;
-}
 
-#php {
-background-image: url(Schermafbeelding\ 2024-10-06\ 001531.png); 
-background-size: cover;
-color: white;
-text-align: center;
-padding: 400px 100px;
-}
-
-#sql {
-background-image: url(Schermafbeelding\ 2024-10-02\ 204849.png);
-background-size: cover;
-color: white;
-text-align: center;
-padding: 400px 100px;
-}
-
-#TCR {
-background-image: url(Schermafbeelding\ 2024-10-09\ 182749.png);
-background-size: cover;
-color: white;
-text-align: center;
-padding: 50px 50px;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-section img {
-    max-width: 200px;
-}
 
 form {
     display: flex;
@@ -135,4 +240,24 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+.javascript{
+background-image: none;
+background-color: black;
+}
+
+.phpt{
+background-image: none;
+background-color: white;   
+}
+
+.sql{
+background-image: none;
+background-color: black;
+}
+
+.html-css{
+background-image: none;
+background-color: white;
 }
