@@ -1,90 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulier</title>
 </head>
 <body>
-<h1>Formulieren</h1>
-    <form action="results.html" method="GET"></form>
-    <div>
- <label>Voornaam</label>
- <input Voornaam="Voornaam"
-  </div>
- <div>
- <label>Achternaam</label>
- <input Achternaam="Achternaam"
-</div>
- <div>
-  Geslacht
-  <div>
-    <label for="man">Man</label>
-    <input type="radio" name="Geslacht" id="man">
-  </div>
-   <div>
-    <label for="vrouw">Vrouw</label>
-    <input type="radio" name="Geslacht" id="vrouw">
-     </div>
-    <div>
-     <label>Straat met huisnummer</label>
-     <input Straat met huisnummer="Straat met huisnummer"  
-     </div>
-     <div>
-    <label>Postcode</label>
-    <input Postcode="Postcode"  
-    </div>
-    <div>
-    <label>Stad</label>
-    <input Stad="Stad"
- </div>
-<div>
-    <label>Land</label>
-    <input Land="Land"
- </div>
-<div>
-    <label>BSN-nummer → mag niet meer dan 9 cijfers</label> 
-    <input BSN-nummer → mag niet meer dan 9 cijfers="BSN-nummer → mag niet meer dan 9 cijfers"
-</div>
-<div>
-    <label for="Landen">Kies een land:</label>
+    <h1>Boekingsformulier</h1>
+    <form action="/submit" method="POST">
+        <!-- Voornaam (geen cijfers toegestaan) -->
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" pattern="[A-Za-z]+" required><br><br>
 
-    <select name="Land" id="Land">
-      <option value="Spanje">Spanje</option>
-      <option value="Italië ">Italië </option>
-      <option value="Oostenrijk">Oostenrijk</option>
-      <option value="Turkije">Turkije</option>
-    </select>
-    </div>
-    <div>
-     <label>Datum van vertrek → mag niet in het verleden zijn</label>
-  <input type="date">
-    </div>
-    <div>
-        <label>Datum van terugkomst</label>
-        <input type="date">
-      <div>
-        <label for="Aantal reisgenoten (max 4 mensen)">Aantal:</label>
+        <!-- Achternaam (geen cijfers toegestaan) -->
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" pattern="[A-Za-z]+" required><br><br>
 
-        <select name="cars" id="cars">
-          <option Landen="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-   </div>
-  <div>
-    <label>E-mail</label>
-    <input E-mail="E-mail"
-  </div>
-  <div>
-    <label>
-     Wachtwoord (om account aan te maken) → wachtwoord mag niet getoond worden
-    <input type="Wachtwoord (om account aan te maken) → wachtwoord mag niet getoond worden" name="Wachtwoord (om account aan te maken) → wachtwoord mag niet getoond worden" required>
-     </label>
-    </div> 
-    <button type="submit">Boek nu</button>
-    <button type="reset">Reset</button>
- </form>
+        <!-- Geslacht (radio buttons, man als default) -->
+        <label>Geslacht:</label><br>
+        <input type="radio" id="man" name="geslacht" value="man" checked>
+        <label for="man">Man</label><br>
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+        <label for="vrouw">Vrouw</label><br><br>
+
+        <!-- Straat en huisnummer -->
+        <label for="straat">Straat en huisnummer:</label>
+        <input type="text" id="straat" name="straat" required><br><br>
+
+        <!-- Postcode -->
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required><br><br>
+
+        <!-- Stad -->
+        <label for="stad">Stad:</label>
+        <input type="text" id="stad" name="stad" required><br><br>
+
+        <!-- Land -->
+        <label for="land">Land:</label>
+        <input type="text" id="land" name="land" required><br><br>
+
+        <!-- BSN-nummer (maximaal 9 cijfers) -->
+        <label for="bsn">BSN-nummer:</label>
+        <input type="text" id="bsn" name="bsn" pattern="\d{1,9}" title="Maximaal 9 cijfers" required><br><br>
+
+        <!-- Vakantieland selecteren -->
+        <label for="vakantieland">Vakantieland:</label>
+        <select id="vakantieland" name="vakantieland" required>
+            <option value="Spanje">Spanje</option>
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="Italië">Italië</option>
+            <option value="Griekenland">Griekenland</option>
+            <option value="Turkije">Turkije</option>
+        </select><br><br>
+
+        <!-- Datum van vertrek (niet in het verleden) -->
+        <label for="vertrekdatum">Datum van vertrek:</label>
+        <input type="date" id="vertrekdatum" name="vertrekdatum" min="<?= date('Y-m-d'); ?>" required><br><br>
+
+        <!-- Datum van terugkomst -->
+        <label for="terugkomstdatum">Datum van terugkomst:</label>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" required><br><br>
+
+        <!-- Aantal reisgenoten (maximaal 4, geen negatief aantal) -->
+        <label for="reisgenoten">Aantal reisgenoten:</label>
+        <input type="number" id="reisgenoten" name="reisgenoten" min="0" max="4" required><br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Wachtwoord (verborgen) -->
+        <label for="wachtwoord">Wachtwoord:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required><br><br>
+
+        <!-- Verzendknop -->
+        <input type="submit" value="Boek nu">
+    </form>
 </body>
 </html>
