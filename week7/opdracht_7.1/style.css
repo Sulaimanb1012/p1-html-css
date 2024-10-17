@@ -35,15 +35,15 @@ body {
 }
 
 .yellow {
-    background-color: #f1c40f; /* Yellow */
+    background-color: #f1c40f; 
 }
 
 .orange {
-    background-color: #e67e22; /* Orange */
+    background-color: #e67e22; 
 }
 
 .green {
-    background-color: #2ecc71; /* Green */
+    background-color: #2ecc71; 
 }
 
 h2 {
@@ -62,19 +62,19 @@ p {
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
     .header {
-        background-color: #1f6390; /* Change header color for tablet */
+        background-color: #1f6390; 
     }
 
     .yellow {
-        background-color: yellow; /* Change yellow section for tablet */
+        background-color: yellow; 
     }
 
     .orange {
-        background-color: orange; /* Change orange section for tablet */
+        background-color: orange; 
     }
 
     .green {
-        background-color: green; /* Change green section for tablet */
+        background-color: green; 
     }
 
     h2 {
