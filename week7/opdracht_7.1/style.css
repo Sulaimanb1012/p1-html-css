@@ -89,7 +89,7 @@ p {
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
     .header {
-        background-color: #e74c3c; /* Red background for mobile */
+        background-color: red; 
         position: relative;
     }
 
