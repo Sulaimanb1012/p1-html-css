@@ -12,7 +12,9 @@ body {
 .header {
     background-color: #e74c3c; /* Red */
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -21,6 +23,12 @@ body {
     font-weight: bold;
 }
 
+/* Dropdown placeholder (hidden by default on desktop) */
+.dropdown-placeholder {
+    display: none;
+}
+
+/* Section styles for desktop */
 .section {
     padding: 40px;
     text-align: left;
@@ -47,4 +55,72 @@ h2 {
 p {
     font-size: 1.1em;
     color: #333;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        background-color: #1f6390; /* Change header color for tablet */
+    }
+
+    .yellow {
+        background-color: yellow; /* Change yellow section for tablet */
+    }
+
+    .orange {
+        background-color: orange; /* Change orange section for tablet */
+    }
+
+    .green {
+        background-color: green; /* Change green section for tablet */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        background-color: #e74c3c; /* Red background for mobile */
+        position: relative;
+    }
+
+    /* Show dropdown placeholder for mobile */
+    .dropdown-placeholder {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .yellow {
+        background-color: yellow; 
+    }
+
+    .orange {
+        background-color: orange; 
+    }
+
+    .green {
+        background-color: green; 
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
