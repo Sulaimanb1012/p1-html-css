@@ -41,7 +41,7 @@
 
         <!-- BSN-nummer (maximaal 9 cijfers) -->
         <label for="bsn">BSN-nummer:</label>
-        <input type="text" id="bsn" name="bsn" pattern="\d{1,9}" title="Maximaal 9 cijfers" required><br><br>
+        <input type="text" id="bsn" name="bsn" maxlength="9" required><br><br>
 
         <!-- Vakantieland selecteren -->
         <label for="vakantieland">Vakantieland:</label>
@@ -55,11 +55,11 @@
 
         <!-- Datum van vertrek (niet in het verleden) -->
         <label for="vertrekdatum">Datum van vertrek:</label>
-        <input type="date" id="vertrekdatum" name="vertrekdatum" min="<?= date('Y-m-d'); ?>" required><br><br>
+        <input type="date" id="vertrekdatum" name="vertrekdatum" min="2024-10-17" required><br><br>
 
         <!-- Datum van terugkomst -->
         <label for="terugkomstdatum">Datum van terugkomst:</label>
-        <input type="date" id="terugkomstdatum" name="terugkomstdatum" required><br><br>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" min="2024-10-18" required><br><br>
 
         <!-- Aantal reisgenoten (maximaal 4, geen negatief aantal) -->
         <label for="reisgenoten">Aantal reisgenoten:</label>
