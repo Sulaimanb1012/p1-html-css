@@ -6,7 +6,7 @@
 
 body {
     font-family: "Goldman", cursive;
-    background-image: url(img/background.jpeg);
+    background-image: url(img/);
     background-size: 100vw;
     b
 }
@@ -58,10 +58,10 @@ font-size: 50px;
 
 h2 {
 color: black;
-color: white;
 }
 
 
+    
 
 
     .javascriptTxt{
@@ -84,6 +84,46 @@ color: white;
 } */
 
 
+.javaImage{
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    right: 5%;
+  
+} 
+
+.phpImg{
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 5%;
+  
+}
+
+.sqlimage {
+    position: absolute;
+    width: 20%;
+    top: 45%;
+    left: 65%;
+    
+}
+
+.javascript p {
+    width: 40%;
+    height: 20%;
+    color:white;
+    /* margin-right: 5vw; */
+
+}
+
+.javascript h2 {
+    width: 40%;
+    height: 20%;
+    color:white;
+    /* margin-right: 5vw; */
+
+}
+
 
 .javascriptContainer{
     /* position: absolute; */
@@ -95,46 +135,56 @@ color: white;
 .html-cssContainer{
     /* position: absolute; */
     margin-top: 20vh;
-    margin-left: 10vw;
+    margin-left: 60vw;
 
 }
+
+.php p {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+
+.phpContainer {
+ 
+    margin-top: 35vh;
+    margin-left: 50%;
+
+}
+
+.phph2 {
+    margin: auto;
+    width: 40%;
+    padding: 10px; 
+}
+
 
 .javascriptHighlight{
     color:yellow;
 }
 
 .html-cssHighlight{
-    color: lightskyblue;
-    
-   
+    color: lightskyblue; 
 }
 
-.html-cssHighlight{
-    color: lightblue;
+.html-csscolor {
     color: orangered;
-    
-   
+    }
+
+
+
+.phpHighlight{
+    color: #8993BE;
 }
 
-
-
-
-
-.javaImage{
-    position: absolute;
-    width: 20%;
-    top: 25%;
-    right: 5%;
-  
+.sqlHighlight{
+    color: orange;
 }
+ 
 
-.sqlImage{
-    position: absolute;
-    width: 20%;
-    top: 25%;
-    right: 5%;
-  
-}
+
+
 
 .html-cssImage{
     position: absolute;
@@ -146,9 +196,11 @@ color: white;
 
 
 
+
+
  
 .phpTxt {
-    color: white;
+    color: black;
     background-color: white;
     text-align: center;
     top: 20%;
@@ -159,7 +211,7 @@ color: white;
     }
 
 
-    .html-cssTxt {
+.html-cssTxt {
         color: rgb(6, 5, 5);
         background-color: white;
         text-align: center;
@@ -170,8 +222,20 @@ color: white;
         font-size: 50px;
         }
     
+     .sqlTxt {
+        color: rgb(228, 228, 228);
+        background-color: black;
+        text-align: center;
+        top: 20%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;  
+     }
 
-
+     .sqlh2 {
+    color: white;
+     }
   
 
 .php{
@@ -181,26 +245,37 @@ background-color: white;
         }    
 
 
-.javascript p {
-    width: 40%;
-    height: 20%;
-    color:white;
 
+
+.sql p {
+  
+    width: 40%;
+    height: 60%;
+    color: white;
+}
+
+
+.sqlh2{
+margin-top: 15%;
+margin-left: 5%;
 }
 
 .sql p {
-    width: 40%;
-    height: 20%;
-    color:white;
+margin-left: 5%;
 }
+
+    
+
 
 .html-css p {
   width: 40%;
  height: 60%;
+ /* position: absolute; */
+/* margin-left: 25vw; */
+/* margin-bottom: 5vw; */
   color:black;
 
 }
-
 
 
 form {
@@ -260,4 +335,9 @@ background-color: black;
 .html-css{
 background-image: none;
 background-color: white;
+}
+
+.text h2 .highlight {
+    color: blue; /* HTML orange */
+    color: orange; /* CSS blue */
 }
