@@ -6,7 +6,7 @@
 
 body {
     font-family: "Goldman", cursive;
-    background-image: url(img/);
+    background-image: url(img/background.jpeg);
     background-size: 100vw;
     b
 }
@@ -55,6 +55,10 @@ transform: translate(-50%,-50%);
 font-size: 50px;
 }
 
+
+.html-css1 p {
+ width: ;
+}
 
 h2 {
 color: black;
@@ -132,7 +136,13 @@ color: black;
 
 }
 
+
+.html-csscolors {
+color: orangered;
+}
+
 .html-cssContainer{
+    width: 65vw;
     /* position: absolute; */
     margin-top: 20vh;
     margin-left: 60vw;
@@ -144,6 +154,7 @@ color: black;
     width: 40%;
     padding: 10px;
 }
+
 
 
 .phpContainer {
@@ -338,6 +349,6 @@ background-color: white;
 }
 
 .text h2 .highlight {
-    color: blue; /* HTML orange */
-    color: orange; /* CSS blue */
+    color: blue; 
+    color: orange; 
 }
