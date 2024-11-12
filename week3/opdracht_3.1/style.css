@@ -8,13 +8,16 @@ body {
     font-family: "Goldman", cursive;
     background-image: url(img/background.jpeg);
     background-size: 100vw;
-    b
+
 }
 
 
 h2 {
 color: white;    
 }
+
+
+
 nav {
     background-color: #008CBA;
     padding: 1rem;
@@ -22,6 +25,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 
 nav .logo-img {
     height: 50px;
@@ -56,9 +60,14 @@ font-size: 50px;
 }
 
 
-.html-css1 p {
- width: ;
+.html-css12 {
+top: 20%;
+color: black
+
 }
+
+ 
+
 
 h2 {
 color: black;
@@ -153,8 +162,8 @@ color: orangered;
     margin: auto;
     width: 40%;
     padding: 10px;
+    margin-left: 40%;
 }
-
 
 
 .phpContainer {
@@ -166,7 +175,7 @@ color: orangered;
 
 .phph2 {
     margin: auto;
-    width: 40%;
+    width: 20%;
     padding: 10px; 
 }
 
@@ -280,9 +289,9 @@ margin-left: 5%;
 
 .html-css p {
   width: 40%;
- height: 60%;
+ height: 50%;
  /* position: absolute; */
-/* margin-left: 25vw; */
+margin-right: 25vw;
 /* margin-bottom: 5vw; */
   color:black;
 
