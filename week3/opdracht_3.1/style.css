@@ -8,7 +8,7 @@ body {
     font-family: "Goldman", cursive;
     background-image: url(img/background.jpeg);
     background-size: 100vw;
-
+    
 }
 
 
@@ -361,3 +361,51 @@ background-color: white;
     color: blue; 
     color: orange; 
 }
+
+
+
+ul {
+list-style-type: none;
+background-color: #008CBA;
+overflow: hidden;
+}
+
+li {
+float: left;
+}
+
+li a {
+color: white;
+text-decoration: none;
+text-align: center;
+padding: 0.8rem 1rem;
+display: inline-block;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #e9e9ee;
+    min-width: 0vw;
+    z-index: 1;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a {
+color: #008CBA;
+padding: 0.8rem 1rem;
+display: block;
+text-align: left;
+}
+
+.dropbtn:hover {
+color: #008CBA;
+background-color: #e9e9ee;
+}
+
+.dropdown:hover  .dropdown-menu {
+    display: block;
+}
+
