@@ -371,7 +371,8 @@ overflow: hidden;
 }
 
 li {
-float: left;
+display: flex;
+flex-direction: column;
 }
 
 li a {
@@ -398,14 +399,20 @@ color: #008CBA;
 padding: 0.8rem 1rem;
 display: block;
 text-align: left;
+text-decoration: none;
 }
 
 .dropbtn:hover {
 color: #008CBA;
 background-color: #e9e9ee;
+
 }
 
-.dropdown:hover  .dropdown-menu {
+.dropdown:hover  .dropdown-menu  {
     display: block;
+}
+
+.dropdown-menu a:hover {
+background-color: #d5ddde;
 }
 
